@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "swiper": "^11.2.8",
+    "tailwindcss": "^4.1.10"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+  }
+}

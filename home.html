@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Elite Property Management | Home</title>
+    <!-- Stylesheets -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /></noscript>
+    <meta name="description" content="Discover Elite Management – your trusted partner in HOA and property management services. Explore our web-based tools and personalized support for your community." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="page-wrapper font-poppins bg-gray-400 overflow-x-hidden">
+      <!-- Main Header-->
+      <header class="main-header header-style-one relative w-full z-12">
+        <!-- Header Top -->
+        <div class="header-top bg-white">
+          <div class="inner-container relative py-1.5 px-4 lg:px-8">
+            <div class="top-right flex justify-end">
+              <!-- Info List -->
+              <ul class="list-none">
+                <li class="flex items-center gap-2 md:gap-2.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                    <path
+                      d="M15.3727 10.8795L11.6922 9.23031L11.682 9.22562C11.491 9.1439 11.2825 9.11111 11.0756 9.1302C10.8687 9.1493 10.6698 9.21969 10.4969 9.335C10.4765 9.34844 10.457 9.36305 10.4383 9.37875L8.53673 10.9998C7.33204 10.4147 6.08829 9.18031 5.50313 7.99125L7.12657 6.06078C7.14219 6.04125 7.15704 6.02172 7.1711 6.00062C7.28394 5.8282 7.35239 5.63056 7.37039 5.42529C7.38838 5.22002 7.35534 5.01348 7.27423 4.82406V4.81469L5.62032 1.12797C5.51309 0.880517 5.3287 0.674385 5.09468 0.540341C4.86067 0.406297 4.58958 0.35153 4.32188 0.384217C3.26326 0.523519 2.29155 1.04341 1.58824 1.84679C0.884919 2.65017 0.498093 3.6821 0.500007 4.74984C0.500007 10.953 5.54688 15.9998 11.75 15.9998C12.8177 16.0018 13.8497 15.6149 14.6531 14.9116C15.4564 14.2083 15.9763 13.2366 16.1156 12.178C16.1484 11.9104 16.0937 11.6393 15.9598 11.4053C15.8259 11.1713 15.62 10.9869 15.3727 10.8795ZM11.75 14.7498C9.09873 14.7469 6.55687 13.6924 4.68214 11.8177C2.8074 9.94298 1.7529 7.40112 1.75001 4.74984C1.74707 3.98694 2.02192 3.24906 2.52324 2.67399C3.02456 2.09892 3.71806 1.72599 4.47423 1.62484C4.47392 1.62796 4.47392 1.6311 4.47423 1.63422L6.11485 5.30609L4.50001 7.2389C4.48362 7.25776 4.46873 7.27788 4.45548 7.29906C4.33791 7.47947 4.26894 7.68718 4.25525 7.90208C4.24157 8.11697 4.28362 8.33176 4.37735 8.52562C5.08516 9.97328 6.54376 11.4209 8.00704 12.128C8.20232 12.2208 8.41835 12.2614 8.63403 12.2458C8.8497 12.2302 9.05763 12.1589 9.23751 12.0389C9.25757 12.0254 9.27687 12.0108 9.29532 11.9952L11.1945 10.3748L14.8664 12.0194C14.8664 12.0194 14.8727 12.0194 14.875 12.0194C14.7751 12.7766 14.4027 13.4715 13.8275 13.9741C13.2524 14.4766 12.5138 14.7524 11.75 14.7498Z"
+                      fill="#158BE3"
+                    />
+                  </svg>
+                  <span class="text-primary-300 text-xs leading- md:text-sm font-medium">Resident services:<a href="tel:5613029383"> 561-302-9383</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Header Top -->
+
+        <div class="header-lower absolute w-full">
+          <div class="auto-container relative">
+            <!-- Main box -->
+            <div class="main-box fixed flex justify-between items-center w-full py-4 px-6 transition-all duration-300 ease-in-out xl:py-3.5 xl:px-8">
+              <div class="logo-box">
+                <a href="home.html"><img src="images/logo_negative.webp" alt="Elite Property Management logo" title="Elite Property Management" /></a>
+              </div>
+              <!--Mobile Navigation Toggler-->
+              <div class="mobile-nav-toggler cursor-pointer xl:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" class="fill-gray-100">
+                  <path
+                    d="M24 9C24 9.26522 23.8946 9.51957 23.7071 9.70711C23.5196 9.89464 23.2652 10 23 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H23C23.2652 8 23.5196 8.10536 23.7071 8.29289C23.8946 8.48043 24 8.73478 24 9ZM1 2H23C23.2652 2 23.5196 1.89464 23.7071 1.70711C23.8946 1.51957 24 1.26522 24 1C24 0.734784 23.8946 0.48043 23.7071 0.292893C23.5196 0.105357 23.2652 0 23 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2ZM23 16H1C0.734784 16 0.48043 16.1054 0.292893 16.2929C0.105357 16.4804 0 16.7348 0 17C0 17.2652 0.105357 17.5196 0.292893 17.7071C0.48043 17.8946 0.734784 18 1 18H23C23.2652 18 23.5196 17.8946 23.7071 17.7071C23.8946 17.5196 24 17.2652 24 17C24 16.7348 23.8946 16.4804 23.7071 16.2929C23.5196 16.1054 23.2652 16 23 16Z"
+                  />
+                </svg>
+              </div>
+              <!--Nav Box-->
+              <div class="nav-outer hidden absolute top-0 left-0 w-full z-99 bg-gray-100 transition-all duration-500 ease-in-out xl:static xl:block xl:w-auto xl:bg-transparent">
+                <nav class="nav main-menu">
+                  <ul class="navigation flex flex-col text-dark-300 text-base font-normal uppercase xl:flex-row xl:justify-between xl:items-center xl:gap-2 xl:text-gray-100">
+                    <li class="upper-box flex justify-between items-center py-4 px-6 xl:hidden">
+                      <div class="nav-logo">
+                        <a href="home.html"><img src="images/logo.png" alt="Elite Property Management" /></a>
+                      </div>
+                      <div class="close-btn cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M2.53268 19.3334L0.666016 17.4667L8.13268 10.0001L0.666016 2.53341L2.53268 0.666748L9.99935 8.13341L17.466 0.666748L19.3327 2.53341L11.866 10.0001L19.3327 17.4667L17.466 19.3334L9.99935 11.8667L2.53268 19.3334Z" fill="#26262E" />
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="text-primary-300 px-6 xl:px-1.5 2xl:p-3 font-bold xl:font-medium xl:text-primary-200">
+                      <a href="home.html" class="block py-5.5 border-t border-b border-gray-200 xl:inline xl:py-0 xl:border-0">Home</a>
+                    </li>
+                    <li class="px-6 xl:px-1.5 2xl:p-3 hover:text-primary-300 hover:font-bold xl:hover:text-primary-200 xl:hover:font-medium">
+                      <a href="find-my-community.html" class="block py-5.5 border-b border-gray-200 xl:inline xl:py-0 xl:border-0">Find my community</a>
+                    </li>
+                    <li class="px-6 xl:px-1.5 2xl:p-3 hover:text-primary-300 hover:font-bold xl:hover:text-primary-200 xl:hover:font-medium">
+                      <a href="rental-property-services.html" class="block py-5.5 border-b border-gray-200 xl:inline xl:py-0 xl:border-0">Rental property services</a>
+                    </li>
+                    <li class="px-6 xl:px-1.5 2xl:p-3 hover:text-primary-300 hover:font-bold xl:hover:text-primary-200 xl:hover:font-medium">
+                      <a href="hoa-condo-association-services.html" class="block py-5.5 border-b border-gray-200 xl:inline xl:py-0 xl:border-0">Hoa & Condo Association Services</a>
+                    </li>
+                    <li class="px-6 xl:px-1.5 2xl:p-3 hover:text-primary-300 hover:font-bold xl:hover:text-primary-200 xl:hover:font-medium">
+                      <a href="faq.html" class="block py-5.5 border-b border-gray-200 xl:inline xl:py-0 xl:border-0">Faq</a>
+                    </li>
+                    <li class="px-6 xl:px-1.5 2xl:p-3 hover:text-primary-300 hover:font-bold xl:hover:text-primary-200 xl:hover:font-medium">
+                      <a href="about.html" class="block py-5.5 border-b border-gray-200 xl:inline xl:py-0 xl:border-0">About</a>
+                    </li>
+                    <li class="px-6 xl:px-1.5 2xl:p-3 hover:text-primary-300 hover:font-bold xl:hover:text-primary-200 xl:hover:font-medium">
+                      <a href="contact.html" class="block py-5.5 border-b border-gray-200 xl:inline xl:py-0 xl:border-0">Contact</a>
+                    </li>
+                    <li class="flex justify-center items-center py-3.75 xl:hidden">
+                      <a href="contact.html" class="inline-flex items-center py-4 px-6 uppercase bg-dark-300 text-gray-100 rounded-lg hover:bg-primary-300 hover:translate-x-0.25 hover:-translate-y-0.25 duration-500 ease-in-out">Contact us</a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- Main Menu End-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--End Main Header -->
+
+      <!--Main Slider-->
+      <section class="main-slider relative">
+        <div class="swiper h-200 text-gray-100">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <!-- MAIN IMAGE -->
+              <picture>
+                <source srcset="images/modern-luxury-villa-with-pool-and-glass-doors-1200.webp" media="(max-width: 1200px)" />
+                <img src="images/modern-luxury-villa-with-pool-and-glass-doors.jpg" alt="Modern luxury villa with private pool, large sliding glass doors, and minimalist outdoor design under a clear blue sky" class="object-cover size-full" fetchpriority="high" />
+              </picture>
+              <div class="overlay1 absolute inset-0 z-10"></div>
+              <div class="absolute top-35 px-6 z-11 md:top-50 xl:px-30">
+                <h1 class="text-4xl sm:text-5xl md:-text-4xl lg:text-6xl font-bold">The Management team<span class="sm:block"> you can depend on</span></h1>
+                <p class="mt-6 text-base font-normal sm:mt-12 sm:text-2xl xl:text-3xl xl:font-inter">For all south florida rental property management,<span class="block">hoa and condo association needs</span></p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <!-- MAIN IMAGE -->
+              <picture>
+                <source srcset="images/mediterranean-style-villa-with-pool-and-sun-loungers-1200.webp" media="(max-width: 1200px)" />
+                <img src="images/mediterranean-style-villa-with-pool-and-sun-loungers.webp" alt="Elegant Mediterranean-style villa with private swimming pool, sun loungers, and arched terrace under a blue sky" class="object-cover size-full" />
+              </picture>
+              <div class="overlay1 absolute inset-0 z-10"></div>
+              <div class="absolute top-35 px-6 z-11 md:top-50 xl:px-30">
+                <h1 class="text-4xl sm:text-5xl md:-text-4xl lg:text-6xl font-bold">The Management team<span class="sm:block"> you can depend on</span></h1>
+                <p class="mt-6 text-base font-normal sm:mt-12 sm:text-2xl xl:text-3xl xl:font-inter">For all south florida rental property management,<span class="block">hoa and condo association needs</span></p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <!-- MAIN IMAGE -->
+              <picture>
+                <source srcset="images/modern-suburban-home-with-garage-and-landscaped-entry-1199.webp" media="(max-width: 767.99px)" />
+                <source srcset="images/modern-suburban-home-with-garage-and-landscaped-entry-1335.jpg" media="(min-width: 768px)" />
+                <img src="images/modern-suburban-home-with-garage-and-landscaped-entry.jpg" alt="Modern suburban home with attached garage, illuminated entryway, and landscaped front yard at sunset" class="object-cover size-full" />
+              </picture>
+              <div class="overlay1 absolute inset-0 z-10"></div>
+              <div class="absolute top-35 px-6 z-11 md:top-50 xl:px-30">
+                <h1 class="text-4xl sm:text-5xl md:-text-4xl lg:text-6xl font-bold">The Management team<span class="sm:block"> you can depend on</span></h1>
+                <p class="mt-6 text-base font-normal sm:mt-12 sm:text-2xl xl:text-3xl xl:font-inter">For all south florida rental property management,<span class="block">hoa and condo association needs</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination z-10"></div>
+        </div>
+      </section>
+      <!-- End Main Slider-->
+
+      <!-- About Section -->
+      <section class="about-section pt-14 px-6 xl:pt-16 xl:px-30 text-gray-500 text-base font-normal">
+        <div class="auto-container">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-4 lg:gap-10">
+            <div class="content-column col-span-1">
+              <div class="inner-column flex flex-col gap-8">
+                <div class="sec-title">
+                  <h2 class="text-2xl lg:text-3xl leading-snug font-bold">Reliable Property Management with Transparent Reporting and Consistent Communication</h2>
+                </div>
+                <p>Elite Property Management (EPM) was created with the vision of:</p>
+                <ul class="flex flex-col gap-4">
+                  <li class="flex items-center gap-4">
+                    <div class="icon-box flex justify-center items-center size-10 rounded-full bg-gray-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                        <path
+                          d="M22.5 14.2501H21.75V2.42824L22.6566 2.23324C22.755 2.21479 22.8487 2.17682 22.9321 2.12159C23.0156 2.06635 23.0872 1.99496 23.1427 1.91162C23.1981 1.82828 23.2364 1.73468 23.2551 1.63634C23.2738 1.53799 23.2726 1.4369 23.2517 1.33901C23.2307 1.24112 23.1904 1.14842 23.133 1.06638C23.0756 0.984329 23.0024 0.914595 22.9177 0.861285C22.833 0.807974 22.7384 0.772167 22.6396 0.755972C22.5408 0.739778 22.4398 0.743525 22.3425 0.766992L1.3425 5.26699C1.16159 5.30603 1.00149 5.41058 0.89302 5.56054C0.784545 5.7105 0.735349 5.89527 0.754894 6.07932C0.774438 6.26336 0.861343 6.43368 0.998893 6.55751C1.13644 6.68134 1.31492 6.74994 1.5 6.75012C1.55326 6.75002 1.60636 6.74437 1.65844 6.73324L2.25 6.60668V14.2501H1.5C1.30109 14.2501 1.11032 14.3291 0.96967 14.4698C0.829018 14.6104 0.75 14.8012 0.75 15.0001C0.75 15.199 0.829018 15.3898 0.96967 15.5304C1.11032 15.6711 1.30109 15.7501 1.5 15.7501H22.5C22.6989 15.7501 22.8897 15.6711 23.0303 15.5304C23.171 15.3898 23.25 15.199 23.25 15.0001C23.25 14.8012 23.171 14.6104 23.0303 14.4698C22.8897 14.3291 22.6989 14.2501 22.5 14.2501ZM3.75 6.28137L20.25 2.7498V14.2501H18V9.00012C18 8.8012 17.921 8.61044 17.7803 8.46979C17.6397 8.32913 17.4489 8.25012 17.25 8.25012H6.75C6.55109 8.25012 6.36032 8.32913 6.21967 8.46979C6.07902 8.61044 6 8.8012 6 9.00012V14.2501H3.75V6.28137ZM16.5 11.2501H7.5V9.75012H16.5V11.2501ZM7.5 12.7501H16.5V14.2501H7.5V12.7501Z"
+                          fill="#158BE3"
+                        />
+                      </svg>
+                    </div>
+                    <span>Reliable property management</span>
+                  </li>
+                  <li class="flex items-center gap-4">
+                    <div class="icon-box flex justify-center items-center w-10 h-10 rounded-full bg-gray-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                        <path
+                          d="M17.0306 4.21938L13.2806 0.469375C13.2109 0.399749 13.1282 0.344539 13.0371 0.306898C12.9461 0.269257 12.8485 0.249923 12.75 0.25H5.25C4.85218 0.25 4.47064 0.408035 4.18934 0.68934C3.90804 0.970645 3.75 1.35218 3.75 1.75V3.25H2.25C1.85218 3.25 1.47064 3.40804 1.18934 3.68934C0.908035 3.97064 0.75 4.35218 0.75 4.75V18.25C0.75 18.6478 0.908035 19.0294 1.18934 19.3107C1.47064 19.592 1.85218 19.75 2.25 19.75H12.75C13.1478 19.75 13.5294 19.592 13.8107 19.3107C14.092 19.0294 14.25 18.6478 14.25 18.25V16.75H15.75C16.1478 16.75 16.5294 16.592 16.8107 16.3107C17.092 16.0294 17.25 15.6478 17.25 15.25V4.75C17.2501 4.65148 17.2307 4.55391 17.1931 4.46286C17.1555 4.37182 17.1003 4.28908 17.0306 4.21938ZM12.75 18.25H2.25V4.75H9.43969L12.75 8.06031V15.985C12.75 15.9906 12.75 15.9953 12.75 16C12.75 16.0047 12.75 16.0094 12.75 16.015V18.25ZM15.75 15.25H14.25V7.75C14.2501 7.65148 14.2307 7.55391 14.1931 7.46286C14.1555 7.37182 14.1003 7.28908 14.0306 7.21937L10.2806 3.46938C10.2109 3.39975 10.1282 3.34454 10.0371 3.3069C9.94609 3.26926 9.84852 3.24992 9.75 3.25H5.25V1.75H12.4397L15.75 5.06031V15.25ZM10.5 12.25C10.5 12.4489 10.421 12.6397 10.2803 12.7803C10.1397 12.921 9.94891 13 9.75 13H5.25C5.05109 13 4.86032 12.921 4.71967 12.7803C4.57902 12.6397 4.5 12.4489 4.5 12.25C4.5 12.0511 4.57902 11.8603 4.71967 11.7197C4.86032 11.579 5.05109 11.5 5.25 11.5H9.75C9.94891 11.5 10.1397 11.579 10.2803 11.7197C10.421 11.8603 10.5 12.0511 10.5 12.25ZM10.5 15.25C10.5 15.4489 10.421 15.6397 10.2803 15.7803C10.1397 15.921 9.94891 16 9.75 16H5.25C5.05109 16 4.86032 15.921 4.71967 15.7803C4.57902 15.6397 4.5 15.4489 4.5 15.25C4.5 15.0511 4.57902 14.8603 4.71967 14.7197C4.86032 14.579 5.05109 14.5 5.25 14.5H9.75C9.94891 14.5 10.1397 14.579 10.2803 14.7197C10.421 14.8603 10.5 15.0511 10.5 15.25Z"
+                          fill="#158BE3"
+                        />
+                      </svg>
+                    </div>
+                    <span>Transparent reporting</span>
+                  </li>
+                  <li class="flex items-center gap-4">
+                    <div class="icon-box flex justify-center items-center w-10 h-10 rounded-full bg-gray-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                        <path
+                          d="M20.25 9.24984C20.2488 8.05674 19.7743 6.91287 18.9306 6.06923C18.087 5.22558 16.9431 4.75108 15.75 4.74984H12.0187C11.7459 4.7339 6.99188 4.39921 2.46469 0.602336C2.24607 0.418729 1.97959 0.301324 1.69656 0.263912C1.41353 0.226501 1.12571 0.270637 0.866889 0.391135C0.608073 0.511634 0.38902 0.70349 0.235461 0.944167C0.081903 1.18484 0.00021725 1.46434 0 1.74984V16.7498C3.88961e-05 17.0354 0.0815953 17.315 0.235084 17.5558C0.388572 17.7967 0.607614 17.9887 0.866465 18.1093C1.12532 18.2299 1.41322 18.2741 1.69633 18.2367C1.97945 18.1994 2.24601 18.0819 2.46469 17.8983C6.00563 14.9283 9.68344 14.077 11.25 13.8389V16.8126C11.2497 17.0598 11.3105 17.3032 11.4269 17.5213C11.5434 17.7393 11.7119 17.9252 11.9175 18.0623L12.9487 18.7495C13.1481 18.8826 13.3764 18.9659 13.6145 18.9926C13.8527 19.0193 14.0938 18.9885 14.3176 18.9028C14.5414 18.8172 14.7414 18.6791 14.901 18.5003C15.0605 18.3214 15.1748 18.107 15.2344 17.8748L16.3378 13.7161C17.4204 13.572 18.4138 13.0398 19.1334 12.2183C19.853 11.3968 20.2498 10.3419 20.25 9.24984ZM1.5 16.7433V1.74984C5.51344 5.1164 9.62156 5.96859 11.25 6.17859V12.3173C9.62344 12.5311 5.51625 13.3814 1.5 16.7433ZM13.7812 17.4933V17.5036L12.75 16.8164V13.7498H14.775L13.7812 17.4933ZM15.75 12.2498H12.75V6.24984H15.75C16.5456 6.24984 17.3087 6.56591 17.8713 7.12852C18.4339 7.69112 18.75 8.45419 18.75 9.24984C18.75 10.0455 18.4339 10.8085 17.8713 11.3712C17.3087 11.9338 16.5456 12.2498 15.75 12.2498Z"
+                          fill="#158BE3"
+                        />
+                      </svg>
+                    </div>
+                    <span>Consistent communication</span>
+                  </li>
+                </ul>
+                <p>The founders of EPM saw that most Property Management Companies do not provide these simple, yet essential responsibilities to the Property Owners and Associations they were hired to manage. </p>
+              </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="image-column col-span-1">
+              <div class="inner-column flex flex-col h-full gap-14 md:justify-evenly md:gap-7 lg:justify-around xl:justify-baseline lg:gap-16">
+                <figure class="sm:hidden md:flex md:justify-center md:max-h-86.5 lg:hidden">
+                  <img src="images/logo_mobile.webp" alt="Elite Property Management" class="border border-gray-100 rounded-3xl shadow-md" />
+                </figure>
+                <figure class="hidden sm:block md:hidden lg:block xl:w-full xl:max-w-145 xl:max-h-full">
+                  <img src="images/logo2.png" alt="Elite Property Management" class="border border-gray-100 rounded-3xl shadow-md" />
+                </figure>
+                <p class="text-base font-normal">The founders started this company to <span class="font-bold">change this perception and look forward</span> to showing you how much better your Property or Association can be managed.</p>
+              </div>
+            </div>
+          </div>
+          <hr class="h-0.25 mt-14 lg:mt-16 rounded-xs text-gray-200" />
+        </div>
+      </section>
+      <!--End About Section -->
+
+      <!-- Services Section -->
+      <section class="services-section py-14 px-6 xl:py-16 xl:px-30 text-gray-500 text-2xl leading-snug font-bold">
+        <div class="auto-container">
+          <div class="grid grid-cols-3 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-3 xl:gap-6">
+            <!-- Service Block -->
+            <div class="service-block col-span-3 sm:col-span-1 xl:col-span-1">
+              <div class="inner-box">
+                <div class="image-box relative">
+                  <figure class="md:hidden">
+                    <img src="images/house-for-rent-sign-in-front-of-residential-home-mobile.webp" alt="For rent sign in front yard of single-family residential home available for lease" class="w-full" />
+                  </figure>
+                  <figure class="hidden md:block">
+                    <img src="images/house-for-rent-sign-in-front-of-residential-home.png" alt="For rent sign in front yard of single-family residential home available for lease" class="w-full" />
+                  </figure>
+                  <a
+                    href="rental-property-services.html"
+                    class="read-more absolute right-0 bottom-0 flex justify-center items-center bg-dark-300 rounded-full size-18 hover:bg-primary-300 transition-all duration-500 ease-in-out lg:size-16 xl:size-18"
+                    aria-label="Learn more about Rental Property Management"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28" fill="none">
+                      <path
+                        d="M15.3841 14.8846L2.88409 27.3846C2.76796 27.5007 2.63008 27.5928 2.47834 27.6557C2.3266 27.7186 2.16396 27.7509 1.99972 27.7509C1.83547 27.7509 1.67284 27.7186 1.5211 27.6557C1.36936 27.5928 1.23148 27.5007 1.11534 27.3846C0.999205 27.2684 0.90708 27.1306 0.844226 26.9788C0.781373 26.8271 0.749023 26.6645 0.749023 26.5002C0.749023 26.336 0.781373 26.1733 0.844226 26.0216C0.90708 25.8698 0.999205 25.732 1.11534 25.6158L12.7325 14.0002L1.11534 2.38458C0.880792 2.15003 0.749023 1.83191 0.749023 1.50021C0.749023 1.1685 0.880792 0.850383 1.11534 0.615832C1.34989 0.381281 1.66801 0.249512 1.99972 0.249512C2.33142 0.249512 2.64954 0.381281 2.88409 0.615832L15.3841 13.1158C15.5003 13.2319 15.5925 13.3698 15.6554 13.5215C15.7183 13.6733 15.7507 13.8359 15.7507 14.0002C15.7507 14.1645 15.7183 14.3271 15.6554 14.4789C15.5925 14.6306 15.5003 14.7685 15.3841 14.8846Z"
+                        fill="#FEFEFE"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <h3 class="title mt-6">
+                  <a href="rental-property-services.html">Rental Property <span class="block">Management</span></a>
+                </h3>
+              </div>
+            </div>
+
+            <!-- Service Block -->
+            <div class="service-block col-span-3 sm:col-span-1 xl:col-span-1">
+              <div class="inner-box">
+                <div class="image-box relative">
+                  <figure class="md:hidden">
+                    <img src="images/beachfront-high-rise-apartments-ocean-view-mobile.webp" alt="Luxury beachfront condos and high-rise apartment buildings overlooking the ocean on a sunny day" class="w-full" />
+                  </figure>
+                  <figure class="hidden md:block">
+                    <img src="images/beachfront-high-rise-apartments-ocean-view.png" alt="Luxury beachfront condos and high-rise apartment buildings overlooking the ocean on a sunny day" class="w-full" />
+                  </figure>
+                  <a
+                    href="hoa-condo-association-services.html"
+                    class="read-more absolute right-0 bottom-0 flex justify-center items-center bg-dark-300 rounded-full size-18 hover:bg-primary-300 transition-all duration-500 ease-in-out lg:size-16 xl:size-18"
+                    aria-label="Learn more about Condominium Associations"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28" fill="none">
+                      <path
+                        d="M15.3841 14.8846L2.88409 27.3846C2.76796 27.5007 2.63008 27.5928 2.47834 27.6557C2.3266 27.7186 2.16396 27.7509 1.99972 27.7509C1.83547 27.7509 1.67284 27.7186 1.5211 27.6557C1.36936 27.5928 1.23148 27.5007 1.11534 27.3846C0.999205 27.2684 0.90708 27.1306 0.844226 26.9788C0.781373 26.8271 0.749023 26.6645 0.749023 26.5002C0.749023 26.336 0.781373 26.1733 0.844226 26.0216C0.90708 25.8698 0.999205 25.732 1.11534 25.6158L12.7325 14.0002L1.11534 2.38458C0.880792 2.15003 0.749023 1.83191 0.749023 1.50021C0.749023 1.1685 0.880792 0.850383 1.11534 0.615832C1.34989 0.381281 1.66801 0.249512 1.99972 0.249512C2.33142 0.249512 2.64954 0.381281 2.88409 0.615832L15.3841 13.1158C15.5003 13.2319 15.5925 13.3698 15.6554 13.5215C15.7183 13.6733 15.7507 13.8359 15.7507 14.0002C15.7507 14.1645 15.7183 14.3271 15.6554 14.4789C15.5925 14.6306 15.5003 14.7685 15.3841 14.8846Z"
+                        fill="#FEFEFE"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <h3 class="title mt-6">
+                  <a href="hoa-condo-association-services.html">Condominium <span class="block">Associations</span></a>
+                </h3>
+              </div>
+            </div>
+
+            <!-- Service Block -->
+            <div class="service-block col-span-3 sm:col-span-1 xl:col-span-1">
+              <div class="inner-box">
+                <div class="image-box relative">
+                  <figure class="md:hidden">
+                    <img src="images/modern-luxury-suburban-house-with-garden-and-garage-mobile.webp" alt="Modern luxury suburban home with landscaped front yard, double garage, and elegant exterior design at sunset" class="w-full" />
+                  </figure>
+                  <figure class="hidden md:block">
+                    <img src="images/modern-luxury-suburban-house-with-garden-and-garage.webp" alt="Modern luxury suburban home with landscaped front yard, double garage, and elegant exterior design at sunset" class="w-full" />
+                  </figure>
+                  <a
+                    href="hoa-condo-association-services.html"
+                    class="read-more absolute right-0 bottom-0 flex justify-center items-center bg-dark-300 rounded-full size-18 hover:bg-primary-300 transition-all duration-500 ease-in-out lg:size-16 xl:size-18"
+                    aria-label="Learn more about HOA Condo Association Services"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28" fill="none">
+                      <path
+                        d="M15.3841 14.8846L2.88409 27.3846C2.76796 27.5007 2.63008 27.5928 2.47834 27.6557C2.3266 27.7186 2.16396 27.7509 1.99972 27.7509C1.83547 27.7509 1.67284 27.7186 1.5211 27.6557C1.36936 27.5928 1.23148 27.5007 1.11534 27.3846C0.999205 27.2684 0.90708 27.1306 0.844226 26.9788C0.781373 26.8271 0.749023 26.6645 0.749023 26.5002C0.749023 26.336 0.781373 26.1733 0.844226 26.0216C0.90708 25.8698 0.999205 25.732 1.11534 25.6158L12.7325 14.0002L1.11534 2.38458C0.880792 2.15003 0.749023 1.83191 0.749023 1.50021C0.749023 1.1685 0.880792 0.850383 1.11534 0.615832C1.34989 0.381281 1.66801 0.249512 1.99972 0.249512C2.33142 0.249512 2.64954 0.381281 2.88409 0.615832L15.3841 13.1158C15.5003 13.2319 15.5925 13.3698 15.6554 13.5215C15.7183 13.6733 15.7507 13.8359 15.7507 14.0002C15.7507 14.1645 15.7183 14.3271 15.6554 14.4789C15.5925 14.6306 15.5003 14.7685 15.3841 14.8846Z"
+                        fill="#FEFEFE"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <h3 class="title mt-6">
+                  <a href="hoa-condo-association-services.html">Homeowner <span class="block"></span>Associations</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section-->
+
+      <!-- Call To Action -->
+      <section class="call-to-action bg-primary-300 py-14 px-6 xl:py-16 xl:px-30">
+        <div class="auto-container">
+          <div class="outer-box grid grid-cols-3 p-6 gap-6 bg-gray-100 border border-gray-200 rounded-2xl shadow-2xs md:grid-cols-4 md:p-14 lg:gap-14">
+            <div class="image-column col-span-3 flex justify-center items-center md:col-span-2 lg:col-span-1">
+              <picture class="flex justify-center items-center w-full">
+                <source srcset="images/logo3-172.webp" media="(max-width: 768px)" />
+                <img src="images/logo3.webp" alt="Elite Property Management" class="w-full max-w-43 md:max-w-full" />
+              </picture>
+              <figure></figure>
+            </div>
+            <div class="content-column col-span-3 flex flex-col items-center gap-6 px-6 md:col-span-2 md:items-baseline md:px-0 lg:col-span-3 lg:pl-10 xl:pl-18 xl:pr-0">
+              <div class="title-box">
+                <h2 class="title hidden md:block md:text-2xl md:font-bold lg:text-5xl">Experience you can trust</h2>
+                <h2 class="text-2xl leading-snug font-bold text-center md:hidden">The Start Of Something New</h2>
+              </div>
+              <p class="text-base font-normal text-center md:text-justify">We are a team of professionals that have over 40 years experience in the real estate industry in South Florida and we look forward to servicing your community's needs.</p>
+              <div class="btn-box">
+                <a href="contact.html" class="inline-flex py-3 px-6 bg-dark-300 rounded-lg text-gray-100 hover:bg-primary-300 hover:translate-x-0.25 hover:-translate-y-0.25 duration-500 ease-in-out"><span class="btn-title text-base leading-snug font-normal uppercase">Contact Us</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Call To Action -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+          <div class="auto-container">
+            <div class="grid grid-cols-12">
+              <!--Footer Column-->
+              <div class="footer-column col-span-12 px-6 py-16 text-dark-300 text-2xl leading-snug font-medium lg:order-2 lg:col-span-4 lg:py-14 xl:px-10 xl:py-16">
+                <div class="footer-widget contacts-widget">
+                  <h4 class="widget-title text-center">We are here to help you</h4>
+                  <ul class="contact-info flex flex-col gap-4 mt-4">
+                    <li>
+                      <p class="text-light-200 text-sm">Phone:</p>
+                      <div class="flex items-center gap-2 mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                          <path
+                            d="M17.8472 12.8554L13.4306 10.8764L13.4184 10.8707C13.1892 10.7727 12.939 10.7333 12.6907 10.7562C12.4424 10.7792 12.2037 10.8636 11.9963 11.002C11.9718 11.0181 11.9484 11.0357 11.9259 11.0545L9.64407 12.9998C8.19845 12.2976 6.70595 10.8164 6.00376 9.3895L7.95188 7.07293C7.97063 7.0495 7.98845 7.02606 8.00532 7.00075C8.14072 6.79384 8.22287 6.55667 8.24446 6.31035C8.26605 6.06402 8.22641 5.81618 8.12907 5.58887V5.57762L6.14438 1.15356C6.0157 0.856621 5.79444 0.609262 5.51362 0.448409C5.2328 0.287556 4.9075 0.221836 4.58626 0.26106C3.31592 0.428223 2.14986 1.05209 1.30588 2.01615C0.461903 2.98021 -0.00228837 4.21852 8.4831e-06 5.49981C8.4831e-06 12.9436 6.05626 18.9998 13.5 18.9998C14.7813 19.0021 16.0196 18.5379 16.9837 17.6939C17.9477 16.85 18.5716 15.6839 18.7388 14.4136C18.7781 14.0924 18.7125 13.7672 18.5518 13.4864C18.3911 13.2056 18.144 12.9843 17.8472 12.8554ZM13.5 17.4998C10.3185 17.4963 7.26825 16.2309 5.01856 13.9813C2.76888 11.7316 1.50348 8.68134 1.50001 5.49981C1.49648 4.58433 1.82631 3.69887 2.42789 3.00879C3.02947 2.3187 3.86167 1.87118 4.76907 1.74981C4.7687 1.75355 4.7687 1.75732 4.76907 1.76106L6.73782 6.16731L4.80001 8.48668C4.78034 8.50932 4.76247 8.53345 4.74657 8.55887C4.60549 8.77536 4.52273 9.02462 4.5063 9.28249C4.48988 9.54037 4.54035 9.79811 4.65282 10.0307C5.5022 11.7679 7.25251 13.5051 9.00845 14.3536C9.24279 14.465 9.50203 14.5137 9.76083 14.495C10.0196 14.4762 10.2692 14.3907 10.485 14.2467C10.5091 14.2305 10.5322 14.2129 10.5544 14.1942L12.8334 12.2498L17.2397 14.2232C17.2397 14.2232 17.2472 14.2232 17.25 14.2232C17.1301 15.1319 16.6833 15.9658 15.9931 16.5689C15.3028 17.1719 14.4166 17.5029 13.5 17.4998Z"
+                            fill="#26262E"
+                          />
+                        </svg>
+                        <a href="tel:5613029383" class="text-dark-300 text-base leading-snug">561 - 302 - 9383</a>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="text-light-200 text-sm">Email:</p>
+                      <div class="flex items-center gap-2 mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="#26262E">
+                          <path
+                            d="M19 0.5H1C0.801088 0.5 0.610322 0.579018 0.46967 0.71967C0.329018 0.860322 0.25 1.05109 0.25 1.25V14C0.25 14.3978 0.408035 14.7794 0.68934 15.0607C0.970644 15.342 1.35218 15.5 1.75 15.5H18.25C18.6478 15.5 19.0294 15.342 19.3107 15.0607C19.592 14.7794 19.75 14.3978 19.75 14V1.25C19.75 1.05109 19.671 0.860322 19.5303 0.71967C19.3897 0.579018 19.1989 0.5 19 0.5ZM10 8.48281L2.92844 2H17.0716L10 8.48281ZM7.25406 8L1.75 13.0447V2.95531L7.25406 8ZM8.36406 9.01719L9.48906 10.0531C9.62743 10.1801 9.80842 10.2506 9.99625 10.2506C10.1841 10.2506 10.3651 10.1801 10.5034 10.0531L11.6284 9.01719L17.0659 14H2.92844L8.36406 9.01719ZM12.7459 8L18.25 2.95438V13.0456L12.7459 8Z"
+                            fill="#26262E"
+                          />
+                        </svg>
+                        <a href="mailto:info@elitepropmgt.com" class="text-dark-300 text-base leading-snug">info@elitepropmgt.com</a>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="text-light-200 text-sm">Address:</p>
+                      <div class="flex gap-2 mt-4 sm:items-center">
+                        <div class="icon-box">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
+                            <path
+                              d="M9 4.73877C8.25832 4.73877 7.5333 4.9587 6.91661 5.37076C6.29993 5.78281 5.81928 6.36848 5.53545 7.05371C5.25162 7.73893 5.17736 8.49293 5.32205 9.22036C5.46675 9.94779 5.8239 10.616 6.34835 11.1404C6.8728 11.6649 7.54098 12.022 8.26841 12.1667C8.99584 12.3114 9.74984 12.2371 10.4351 11.9533C11.1203 11.6695 11.706 11.1888 12.118 10.5722C12.5301 9.95547 12.75 9.23045 12.75 8.48877C12.75 7.49421 12.3549 6.54038 11.6517 5.83712C10.9484 5.13386 9.99456 4.73877 9 4.73877ZM9 10.7388C8.55499 10.7388 8.11998 10.6068 7.74997 10.3596C7.37996 10.1123 7.09157 9.76094 6.92127 9.34981C6.75097 8.93867 6.70642 8.48627 6.79323 8.04982C6.88005 7.61336 7.09434 7.21245 7.40901 6.89778C7.72368 6.58311 8.12459 6.36882 8.56105 6.282C8.9975 6.19519 9.4499 6.23974 9.86104 6.41004C10.2722 6.58034 10.6236 6.86873 10.8708 7.23874C11.118 7.60875 11.25 8.04376 11.25 8.48877C11.25 9.08551 11.0129 9.6578 10.591 10.0798C10.169 10.5017 9.59674 10.7388 9 10.7388ZM9 0.23877C6.81273 0.241251 4.71575 1.11124 3.16911 2.65788C1.62247 4.20452 0.752481 6.3015 0.75 8.48877C0.75 11.4325 2.11031 14.5525 4.6875 17.5122C5.84552 18.8496 7.14886 20.0539 8.57344 21.1028C8.69954 21.1912 8.84978 21.2386 9.00375 21.2386C9.15772 21.2386 9.30796 21.1912 9.43406 21.1028C10.856 20.0535 12.1568 18.8492 13.3125 17.5122C15.8859 14.5525 17.25 11.4325 17.25 8.48877C17.2475 6.3015 16.3775 4.20452 14.8309 2.65788C13.2843 1.11124 11.1873 0.241251 9 0.23877ZM9 19.5513C7.45031 18.3325 2.25 13.856 2.25 8.48877C2.25 6.69856 2.96116 4.98167 4.22703 3.7158C5.4929 2.44993 7.20979 1.73877 9 1.73877C10.7902 1.73877 12.5071 2.44993 13.773 3.7158C15.0388 4.98167 15.75 6.69856 15.75 8.48877C15.75 13.8541 10.5497 18.3325 9 19.5513Z"
+                              fill="#26262E"
+                            />
+                          </svg>
+                        </div>
+
+                        <div class="text-dark-300 text-base leading-snug">1515 N Federal Hwy, Suite 300 Boca Raton, FL 33432</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--Footer Column-->
+              <div class="footer-column col-span-12 grid grid-cols-3 lg:order-1 lg:col-span-8 lg:pt-25 lg:bg-gray-100 xl:px-30">
+                <div class="footer-widget links-widget col-span-3 lg:col-span-1">
+                  <div class="widget-title flex justify-between items-center p-6 bg-gray-100 lg:py-0 xl:px-0">
+                    <h4 class="text-dark-300 text-base font-medium">Pages</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="lg:hidden">
+                      <path
+                        d="M17.031 9.53073C16.9614 9.60046 16.8787 9.65578 16.7876 9.69352C16.6966 9.73127 16.599 9.75069 16.5004 9.75069C16.4019 9.75069 16.3043 9.73127 16.2132 9.69352C16.1222 9.65578 16.0394 9.60046 15.9698 9.53073L9.00042 2.56041L2.03104 9.53073C1.89031 9.67146 1.69944 9.75052 1.50042 9.75052C1.30139 9.75052 1.11052 9.67146 0.969792 9.53073C0.829062 9.39 0.75 9.19912 0.75 9.0001C0.75 8.80108 0.829062 8.61021 0.969792 8.46948L8.46979 0.969476C8.53945 0.899744 8.62216 0.844425 8.71321 0.806682C8.80426 0.768939 8.90186 0.749512 9.00042 0.749512C9.09898 0.749512 9.19657 0.768939 9.28762 0.806682C9.37867 0.844425 9.46139 0.899744 9.53104 0.969476L17.031 8.46948C17.1008 8.53913 17.1561 8.62185 17.1938 8.7129C17.2316 8.80395 17.251 8.90154 17.251 9.0001C17.251 9.09866 17.2316 9.19626 17.1938 9.28731C17.1561 9.37836 17.1008 9.46107 17.031 9.53073Z"
+                        fill="#158BE3"
+                      />
+                    </svg>
+                  </div>
+                  <ul class="user-links flex flex-col gap-8 py-4 px-6 text-light-200 text-sm font-normal lg:gap-4 lg:pb-0 xl:px-0 xl:pt-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widget gallery-widget col-span-3 lg:col-span-2">
+                  <div class="widget-title flex justify-between items-center p-6 bg-gray-100 lg:py-0">
+                    <h4 class="text-dark-300 text-base font-medium">Office Hours</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="lg:hidden">
+                      <path
+                        d="M17.031 9.53073C16.9614 9.60046 16.8787 9.65578 16.7876 9.69352C16.6966 9.73127 16.599 9.75069 16.5004 9.75069C16.4019 9.75069 16.3043 9.73127 16.2132 9.69352C16.1222 9.65578 16.0394 9.60046 15.9698 9.53073L9.00042 2.56041L2.03104 9.53073C1.89031 9.67146 1.69944 9.75052 1.50042 9.75052C1.30139 9.75052 1.11052 9.67146 0.969792 9.53073C0.829062 9.39 0.75 9.19912 0.75 9.0001C0.75 8.80108 0.829062 8.61021 0.969792 8.46948L8.46979 0.969476C8.53945 0.899744 8.62216 0.844425 8.71321 0.806682C8.80426 0.768939 8.90186 0.749512 9.00042 0.749512C9.09898 0.749512 9.19657 0.768939 9.28762 0.806682C9.37867 0.844425 9.46139 0.899744 9.53104 0.969476L17.031 8.46948C17.1008 8.53913 17.1561 8.62185 17.1938 8.7129C17.2316 8.80395 17.251 8.90154 17.251 9.0001C17.251 9.09866 17.2316 9.19626 17.1938 9.28731C17.1561 9.37836 17.1008 9.46107 17.031 9.53073Z"
+                        fill="#158BE3"
+                      />
+                    </svg>
+                  </div>
+                  <ul class="widget-content flex flex-col gap-8 py-4 px-6 text-light-200 text-sm font-normal lg:gap-4 lg:pb-0 xl:pt-6">
+                    <li>Monday - Friday<span class="block">9AM - 5PM</span></li>
+                    <li>Saturday - Sunday<span class="block">By Appointment</span></li>
+                  </ul>
+                </div>
+                <!--Footer Column-->
+                <div class="footer-bottom col-span-3 lg:flex lg:items-center lg:mx-6 lg:border-t lg:border-gray-200 xl:mx-0">
+                  <div class="inner-container grid grid-cols-8 px-6 bg-gray-100 text-light-300 text-sm font-normal lg:px-0 lg:w-full">
+                    <div class="footer-social col-span-8 lg:order-2 lg:col-span-5">
+                      <ul class="social-icon flex justify-center items-center gap-8 py-7 px-6 border-b border-gray-200 lg:justify-start lg:border-0 lg:p-0 xl:gap-8">
+                        <li>
+                          <a href="https://www.facebook.com/profile.php?id=100063519582731" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="21" viewBox="0 0 10 21" fill="none">
+                              <path d="M10 3.78572H8.09028C6.67795 3.78572 6.43836 4.52686 6.43836 5.54814V7.78572H9.78028L9.33151 11.3571H6.43836V20.5H3.0137V11.3571H0V7.78572H3.0137V5.19957C3.0137 2.15757 4.78904 0.5 7.38534 0.5C8.62671 0.5 9.58904 0.596428 10 0.644857V3.78572Z" fill="#57595B" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/elite.propertymanagement/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                              <path
+                                d="M13.1299 10.4999C13.1196 11.3278 12.7868 12.1189 12.2023 12.7053C11.6178 13.2917 10.8277 13.627 9.99988 13.6399C9.16525 13.6399 8.36451 13.3097 7.77247 12.7214C7.18042 12.1331 6.84517 11.3345 6.83988 10.4999C6.81574 10.072 6.87919 9.64363 7.02633 9.24107C7.17347 8.83852 7.40122 8.47023 7.69563 8.15874C7.99004 7.84725 8.34492 7.59912 8.73855 7.42954C9.13218 7.25996 9.55628 7.17249 9.98488 7.17249C10.4135 7.17249 10.8376 7.25996 11.2312 7.42954C11.6248 7.59912 11.9797 7.84725 12.2741 8.15874C12.5685 8.47023 12.7963 8.83852 12.9434 9.24107C13.0906 9.64363 13.154 10.072 13.1299 10.4999ZM19.9999 6.0299V6.4999C19.9999 9.3199 19.9999 12.1499 19.9999 14.9599C20.0119 15.7767 19.8381 16.5855 19.4916 17.3252C19.1451 18.0649 18.635 18.7162 17.9999 19.2299C17.0137 20.0765 15.7493 20.5288 14.4499 20.4999H14.1299C11.2699 20.4999 8.40988 20.4999 5.53988 20.4999C4.80813 20.4999 4.08363 20.355 3.4082 20.0735C2.73278 19.7919 2.11982 19.3794 1.60473 18.8596C1.08963 18.3399 0.682606 17.7233 0.407153 17.0453C0.1317 16.3674 -0.00672054 15.6416 -0.000116299 14.9099V6.1499C-0.0387581 4.82208 0.405353 3.52527 1.24988 2.4999C2.01381 1.56194 3.07006 0.907061 4.24988 0.639904C4.68544 0.536732 5.13239 0.489683 5.57988 0.499904H14.3999C15.2213 0.494831 16.0337 0.671509 16.7788 1.01728C17.524 1.36305 18.1834 1.86935 18.7099 2.4999C19.5558 3.47996 20.0146 4.73532 19.9999 6.0299ZM15.1299 10.4999C15.1319 9.48006 14.831 8.48258 14.2654 7.63393C13.6998 6.78527 12.895 6.12364 11.953 5.73291C11.011 5.34218 9.97414 5.23994 8.97393 5.43915C7.97373 5.63836 7.05519 6.13005 6.33475 6.85189C5.61431 7.57374 5.12441 8.49323 4.92715 9.49382C4.72989 10.4944 4.83415 11.531 5.22671 12.4723C5.61928 13.4136 6.28247 14.2171 7.13223 14.781C7.98199 15.3449 8.98004 15.6439 9.99988 15.6399C11.3597 15.632 12.6615 15.0876 13.6221 14.1251C14.5828 13.1626 15.1246 11.8598 15.1299 10.4999ZM16.9999 5.0099C16.9973 4.61195 16.8387 4.23088 16.5583 3.94855C16.2778 3.66621 15.8978 3.50513 15.4999 3.4999C15.2036 3.49991 14.914 3.58764 14.6676 3.75202C14.4211 3.91641 14.2289 4.15009 14.115 4.42359C14.0012 4.6971 13.9709 4.99819 14.028 5.28888C14.0851 5.57958 14.227 5.84686 14.4357 6.05703C14.6445 6.26721 14.9109 6.41085 15.2012 6.46985C15.4915 6.52885 15.7928 6.50057 16.067 6.38857C16.3413 6.27657 16.5762 6.08587 16.7422 5.84052C16.9083 5.59516 16.9979 5.30614 16.9999 5.0099Z"
+                                fill="#57595B"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="copyright-text col-span-8 flex justify-center items-center py-7 px-6 lg:col-span-3 lg:justify-start lg:order-1 lg:p-0">&copy; 2025 Elite All rights reserved</div>
+                  </div>
+                </div>
+              </div>
+              <!--Footer Column -->
+              <div class="footer-column col-span-12 py-24.75 bg-gray-100 lg:hidden"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--End Main Footer -->
+    </div>
+    <!-- End Page Wrapper -->
+
+    <script src="js/script.js" defer></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return `<div class="${className}"><span>${index + 1}</span></div>`;
+          },
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+        },
+        speed: '50',
+      });
+    </script>
+  </body>
+</html>
