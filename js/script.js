@@ -285,3 +285,106 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateItems();
 });
+// Community Search Functionality
+document.addEventListener('DOMContentLoaded', () => {
+  // Community database with page URLs
+  const communities = [
+    { name: 'Golden Raintree II', url: 'golden-raintree-ii.html' },
+    { name: 'Baywood Village I', url: 'baywood-village-i.html' },
+    { name: 'Boca Linda North', url: 'boca-linda-north.html' },
+    { name: 'Lakewood Oaks', url: 'lakewood-oaks.html' },
+    { name: 'Applewood Village I', url: 'applewood-village-i.html' },
+    { name: 'Barwood Condominiums I', url: 'barwood-condominiums-i.html' },
+    { name: 'Barwood Condominiums II', url: 'barwood-condominiums-ii.html' },
+    { name: 'Barwood Condominiums IV', url: 'barwood-condominiums-iv.html' },
+    { name: 'Lakeview Townhomes', url: 'lakeview-townhomes.html' }
+  ];
+
+  const searchForm = document.querySelector('#search');
+  const searchButton = document.querySelector('button[type="submit"]');
+  
+  if (searchForm && searchButton) {
+    // Create results container
+    const resultsContainer = document.createElement('div');
+    resultsContainer.id = 'search-results';
+    resultsContainer.className = 'search-results mt-4 p-4 bg-white rounded-lg shadow-lg hidden';
+    resultsContainer.innerHTML = '<h3 class="text-lg font-semibold mb-3">Search Results:</h3><div id="results-list"></div>';
+    
+    // Insert results container after the search form
+    const searchBox = document.querySelector('.search-box');
+    searchBox.appendChild(resultsContainer);
+
+    // Search function
+    function performSearch(query) {
+      const resultsList = document.getElementById('results-list');
+      const normalizedQuery = query.toLowerCase().trim();
+      
+      if (normalizedQuery.length < 3) {
+        resultsContainer.classList.add('hidden');
+        return;
+      }
+
+      // Filter communities based on search query
+      const matches = communities.filter(community => 
+        community.name.toLowerCase().includes(normalizedQuery)
+      );
+
+      if (matches.length > 0) {
+        resultsList.innerHTML = matches.map(community => 
+          `<div class="result-item p-3 mb-2 bg-gray-50 rounded border-l-4 border-primary-300 hover:bg-gray-100 cursor-pointer transition-colors">
+            <h4 class="font-medium text-dark-300">${community.name}</h4>
+            <p class="text-sm text-light-200 mt-1">Click to view community details</p>
+          </div>`
+        ).join('');
+        
+        resultsContainer.classList.remove('hidden');
+        
+        // Add click handlers to result items
+        document.querySelectorAll('.result-item').forEach((item, index) => {
+          item.addEventListener('click', () => {
+            const community = matches[index];
+            // Redirect to community detail page
+            window.location.href = community.url;
+          });
+        });
+      } else {
+        resultsList.innerHTML = `
+          <div class="no-results p-4 text-center">
+            <p class="text-light-200">No communities found matching "${query}"</p>
+            <p class="text-sm text-light-200 mt-2">Try searching with different letters or contact us for assistance.</p>
+          </div>
+        `;
+        resultsContainer.classList.remove('hidden');
+      }
+    }
+
+    // Handle form submission
+    searchButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      const query = searchForm.value;
+      performSearch(query);
+    });
+
+    // Handle real-time search as user types
+    searchForm.addEventListener('input', (e) => {
+      const query = e.target.value;
+      performSearch(query);
+    });
+
+    // Handle Enter key
+    searchForm.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const query = searchForm.value;
+        performSearch(query);
+      }
+    });
+
+    // Close results when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!searchBox.contains(e.target)) {
+        resultsContainer.classList.add('hidden');
+      }
+    });
+  }
+});
