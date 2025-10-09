@@ -189,25 +189,68 @@
         margin-bottom: 1.5rem;
       }
       
-      @media (max-width: 768px) {
-        .community-layout {
-          grid-template-columns: 1fr;
-          padding: 0;
-          margin: 0;
+      /* --- Mobile centering fixes --- */
+@media (max-width: 768px) {
+  /* One column, centered content, reasonable side padding */
+  .community-layout {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;              /* add small gutters */
+  }
 
-        }
-        
-        .left-panel {
-          border-right: none;
-          border-bottom: 1px solid #e5e7eb;
-        }
-        
-        .header-banner h1 {
-          font-size: 2rem;
-        }
+  /* Center each panel and limit line length */
+  .left-panel {
+    padding: 1.5rem 1.25rem !important;  /* adds more inner spacing */
+    border-right: none;                  /* removes the vertical line */
+    border-bottom: none;
+  }
 
+  .nav-section {
+    margin-bottom: 1.5rem;               /* adds spacing between sections */
+  }
 
-      }
+  .nav-title {
+    font-size: 1.1rem;                   /* slightly bigger title text */
+  }
+
+  .nav-links li {
+    padding: 0.75rem 0;                  /* taller clickable areas */
+  }
+
+  .nav-links a {
+    font-size: 1rem;                     /* slightly larger font */
+  }
+
+  .right-panel {
+    max-width: 700px;             /* adjust to taste (e.g., 640px) */
+    margin: 0 auto;               /* centers the column */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Center the image grid and make it responsive */
+  .community-images {
+    grid-template-columns: 1fr;   /* stack images on small screens */
+    justify-items: center;        /* center the cells */
+    gap: 1rem;
+  }
+
+  /* Keep images nicely sized and centered */
+  .community-image {
+    width: 100%;
+    max-width: 320px;             /* prevents edge-to-edge stretching */
+    margin: 0 auto;
+  }
+
+  /* Make the header menu container align with content width on mobile */
+  .header-lower .main-box {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 700px;             /* match panels */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
     </style>
   </head>
   <body>
@@ -465,34 +508,12 @@
                     <!--Footer Column-->
                     <div class="footer-bottom col-span-3 lg:flex lg:items-center lg:mx-6 lg:border-t lg:border-gray-200 xl:mx-0 lg:px-7.5 2xl:pl-7.5 2xl:pr-35.5">
                       <div class="inner-container grid grid-cols-12 px-6 bg-gray-100 text-light-300 text-sm font-normal lg:flex lg:w-full lg:justify-between lg:px-0 lg:gap-7">
-                        <div class="col-span-12 flex justify-center items-center gap-2 py-7 border-t border-b border-gray-200 lg:order-2 lg:justify-start lg:py-0 lg:border-0 xl:col-span-2">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                            <path
-                              d="M19.1601 2.50025C19.1601 2.50025 18.2401 2.35025 17.0001 2.28025V1.50025C17.0009 1.24833 16.9066 1.00539 16.736 0.81999C16.5655 0.634593 16.3312 0.520404 16.0801 0.500251C15.6701 0.500251 12.2701 0.230251 10.0001 1.35025C7.73008 0.230251 4.33008 0.500251 3.92008 0.500251C3.66897 0.520404 3.43471 0.634593 3.26415 0.81999C3.09358 1.00539 2.99928 1.24833 3.00008 1.50025V2.29025C1.76008 2.36025 0.880083 2.50025 0.840083 2.50025C0.603458 2.53859 0.388475 2.66064 0.234295 2.84419C0.0801156 3.02774 -0.00300208 3.26056 8.28891e-05 3.50025V17.5003C8.28891e-05 17.7655 0.10544 18.0198 0.292976 18.2074C0.480512 18.3949 0.734866 18.5003 1.00008 18.5003H19.0001C19.2653 18.5003 19.5197 18.3949 19.7072 18.2074C19.8947 18.0198 20.0001 17.7655 20.0001 17.5003V3.50025C20.0032 3.26056 19.92 3.02774 19.7659 2.84419C19.6117 2.66064 19.3967 2.53859 19.1601 2.50025ZM5.00008 2.50025C6.36132 2.45448 7.71882 2.66829 9.00008 3.13025V12.5003C9.00008 12.7655 9.10544 13.0198 9.29298 13.2074C9.48051 13.3949 9.73487 13.5003 10.0001 13.5003C10.2653 13.5003 10.5197 13.3949 10.7072 13.2074C10.8947 13.0198 11.0001 12.7655 11.0001 12.5003V3.09025C12.2855 2.64812 13.6417 2.44808 15.0001 2.50025V13.5003C13.2656 13.5869 11.5657 14.0187 10.0001 14.7703C8.43443 14.0187 6.73461 13.5869 5.00008 13.5003V2.50025ZM2.00008 4.38025C2.28008 4.38025 2.62008 4.32025 3.00008 4.30025V14.5003C3.00008 14.7655 3.10544 15.0198 3.29298 15.2074C3.48051 15.3949 3.73487 15.5003 4.00008 15.5003C5.68402 15.5009 7.35054 15.841 8.90008 16.5003H2.00008V4.38025ZM18.0001 16.5003H11.1001C12.6496 15.841 14.3161 15.5009 16.0001 15.5003C16.2653 15.5003 16.5197 15.3949 16.7072 15.2074C16.8947 15.0198 17.0001 14.7655 17.0001 14.5003V4.29025L18.0001 4.38025V16.5003Z"
-                              fill="#26262E"
-                            />
-                          </svg>
-                          <span>Complaints book</span>
-                        </div>
                         <div class="footer-social col-span-12 lg:order-3 lg:flex lg:justify-center lg:items-center">
                           <ul class="social-icon flex justify-center items-center gap-8 py-7 px-6 border-b border-gray-200 lg:border-0 lg:p-0 xl:gap-8">
                             <li>
                               <a href="https://www.facebook.com/profile.php?id=100063519582731" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="21" viewBox="0 0 10 21" fill="none">
                                   <path d="M10 3.78572H8.09028C6.67795 3.78572 6.43836 4.52686 6.43836 5.54814V7.78572H9.78028L9.33151 11.3571H6.43836V20.5H3.0137V11.3571H0V7.78572H3.0137V5.19957C3.0137 2.15757 4.78904 0.5 7.38534 0.5C8.62671 0.5 9.58904 0.596428 10 0.644857V3.78572Z" fill="#57595B" />
-                                </svg>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                  <path d="M11.2983 8.96736V9.01364H11.27L11.2983 8.96736Z" fill="#57595B" />
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M4.43081 20.5V7.00534H0.247305V20.5H4.43081ZM2.33904 5.16287C3.79791 5.16287 4.70594 4.12663 4.70594 2.83164C4.67875 1.50749 3.79791 0.5 2.36671 0.5C0.935662 0.5 0 1.50749 0 2.83164C0 4.12663 0.907833 5.16287 2.31177 5.16287H2.33904ZM7.05879 20.5H11.2982V12.9975C11.2982 12.5959 11.3258 12.1948 11.4377 11.9078C11.7442 11.1055 12.4418 10.2747 13.613 10.2747C15.1471 10.2747 15.7608 11.5067 15.7608 13.3127V20.5H20V12.7967C20 8.67016 17.9084 6.75 15.1191 6.75C12.8701 6.75 11.8618 8.05192 11.2983 8.96736V7.06526H7.05879C7.11442 8.32588 7.05879 20.5 7.05879 20.5Z"
-                                    fill="#57595B"
-                                  />
                                 </svg>
                               </a>
                             </li>
