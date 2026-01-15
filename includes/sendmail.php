@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $inquiry_type_label = 'General Inquiries';
         } else {
             // Fallback to default email if inquiry type is invalid
-            $to = 'info@elitepropmgt.com';
+            $to = 'officemanager@elitepropmgt.com';
             $inquiry_type_label = 'Unknown';
         }
 
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Send confirmation email to user
         $confirm_subject = "Thank you for contacting Elite Property Management";
         $confirm_body = "Dear $first_name,\n\nThank you for reaching out to Elite Property Management. We have received your message and will be in touch soon.\n\nBest regards,\nElite Property Management Team";
-        $confirm_headers = "From: Elite Property Management <info@elitepropmgt.com>\r\n";
+        $confirm_headers = "From: Elite Property Management <officemanager@elitepropmgt.com>\r\n";
         mail($email, $confirm_subject, $confirm_body, $confirm_headers);
 
         // Redirect or show success
