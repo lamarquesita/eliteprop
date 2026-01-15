@@ -7,17 +7,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = isset($_POST['form_email']) ? filter_var(trim($_POST['form_email']), FILTER_SANITIZE_EMAIL) : '';
     $phone = isset($_POST['form_phone']) ? strip_tags(trim($_POST['form_phone'])) : '';
     $message = isset($_POST['form_message']) ? strip_tags(trim($_POST['form_message'])) : '';
+    $inquiry_type = isset($_POST['form_inquiry_type']) ? strip_tags(trim($_POST['form_inquiry_type'])) : '';
+    $community = isset($_POST['form_community']) ? strip_tags(trim($_POST['form_community'])) : '';
 
     // Validate required fields
-    if ($first_name && $last_name && $email && $message) {
-        // Business email
-        $to = 'info@elitepropmgt.com';
-        $subject = "New Contact Form Submission";
+    if ($first_name && $last_name && $email && $message && $inquiry_type) {
+        // Determine recipient email based on inquiry type
+        if ($inquiry_type === 'homeowner_portal') {
+            $to = 'support@elitepropmgt.com';
+            $inquiry_type_label = 'Homeowner Portal';
+        } elseif ($inquiry_type === 'general_inquiries') {
+            $to = 'officemanager@elitepropmgt.com';
+            $inquiry_type_label = 'General Inquiries';
+        } else {
+            // Fallback to default email if inquiry type is invalid
+            $to = 'info@elitepropmgt.com';
+            $inquiry_type_label = 'Unknown';
+        }
+
+        $subject = "New Contact Form Submission - " . $inquiry_type_label;
         $body = "You have received a new message from the contact form:\n\n" .
+                "Inquiry Type: $inquiry_type_label\n" .
                 "Name: $first_name $last_name\n" .
                 "Email: $email\n" .
-                "Phone: $phone\n" .
-                "Message:\n$message\n";
+                "Phone: $phone\n";
+        
+        // Add community if provided
+        if ($community) {
+            $body .= "Community: $community\n";
+        }
+        
+        $body .= "\nMessage:\n$message\n";
+        
         $headers = "From: $first_name $last_name <$email>\r\nReply-To: $email\r\n";
 
         // Send email to business
