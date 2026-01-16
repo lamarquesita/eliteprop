@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Barwood Condominiums II', url: 'barwood-condominiums-ii.html' },
     { name: 'Barwood Condominiums IV', url: 'barwood-condominiums-iv.html' },
     { name: 'Lakeview Townhomes', url: 'lakeview-townhomes.html' },
-    { name: 'Villagio of Boca Raton', url: 'villagio-of-boca-raton.html' },
+    { name: 'Villaggio of Boca Raton', url: 'villaggio-of-boca-raton.html' },
     { name: 'Lake Windwood VIII', url: 'lake-windwood-viii.html' },
     { name: 'Ranchette Square Homeowners Assn Inc.', url: 'ranchette-square-homeowners-assn-inc.html' },
     { name: 'St. Tropez at Boca Golf POA', url: 'st-tropez-at-boca-golf-poa.html' }

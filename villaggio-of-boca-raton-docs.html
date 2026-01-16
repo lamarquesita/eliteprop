@@ -2,20 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Contact Property Manager - Villagio of Boca Raton | Elite Property Management</title>
+    <title>Association Documents - Villaggio of Boca Raton | Elite Property Management</title>
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- Stylesheets -->
     <link href="css/style.css" rel="stylesheet" />
-    <meta name="description" content="Contact the property manager for Villagio of Boca Raton. Submit your service request or inquiry." />
+    <meta name="description" content="Association Documents for Villaggio of Boca Raton - Access and download association documents." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <style>
-      .contact-form-container {
-        max-width: 800px;
+      .docs-container {
+        max-width: 900px;
         margin: 0 auto;
         padding: 2rem clamp(1rem, 5vw, 4rem);
         min-height: 100vh;
@@ -76,80 +74,73 @@
         color: #0284c7;
       }
       
-      .form-section {
-        background: #f9fafb;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        border: 1px solid #e5e7eb;
+      .docs-section {
+        margin-bottom: 2rem;
       }
       
-      .form-group {
+      .docs-section-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #2070c0;
         margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #2070c0;
       }
       
-      .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        color: #374151;
-        font-weight: 500;
-        font-size: 0.9rem;
-      }
-      
-      .form-group label .required {
-        color: red;
-        margin-left: 0.25rem;
-      }
-      
-      .form-group input,
-      .form-group textarea {
-        width: 100%;
-        padding: 0.75rem;
-        border: 1px solid #d1d5db;
-        border-radius: 0.375rem;
-        font-size: 1rem;
-        transition: border-color 0.2s;
-        background: white;
-      }
-      
-      .form-group input:focus,
-      .form-group textarea:focus {
-        outline: none;
-        border-color: #2070c0;
-        box-shadow: 0 0 0 3px rgba(32, 112, 192, 0.1);
-      }
-      
-      .form-group textarea {
-        resize: vertical;
-        min-height: 120px;
-      }
-      
-      .submit-btn {
-        width: 100%;
-        padding: 0.875rem 1.5rem;
-        background: #2070c0;
-        color: white;
-        border: none;
-        border-radius: 0.375rem;
-        font-size: 1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        cursor: pointer;
+      .doc-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
         transition: all 0.2s;
       }
       
-      .submit-btn:hover:not(:disabled) {
+      .doc-item:hover {
+        background: #f3f4f6;
+        border-color: #2070c0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .doc-name {
+        flex: 1;
+        color: #374151;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.625rem 1.25rem;
+        background: #2070c0;
+        color: white;
+        text-decoration: none;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+      
+      .download-btn:hover {
         background: #0284c7;
         transform: translateY(-1px);
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       }
       
-      .submit-btn:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
+      .download-btn svg {
+        width: 1rem;
+        height: 1rem;
+        fill: currentColor;
       }
       
       @media (max-width: 768px) {
-        .contact-form-container {
+        .docs-container {
           padding: 1rem;
         }
         
@@ -161,8 +152,15 @@
           font-size: 1.5rem;
         }
         
-        .form-section {
-          padding: 1.5rem;
+        .doc-item {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+        
+        .download-btn {
+          width: 100%;
+          justify-content: center;
         }
       }
     </style>
@@ -258,110 +256,41 @@
       <section class="page-wrapper font-poppins bg-white">
         <!-- Header Banner -->
         <div class="header-banner relative mt-18 py-8 px-6 text-black xl:py-20 xl:px-30">
-          <h1>Contact Property Manager</h1>
-          <p>Villagio of Boca Raton</p>
+          <h1>Association Documents</h1>
+          <p>Villaggio of Boca Raton</p>
         </div>
 
-        <div class="contact-form-container">
-          <a href="villagio-of-boca-raton.html" class="back-link">
+        <div class="docs-container">
+          <a href="villaggio-of-boca-raton.html" class="back-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Back to Villagio of Boca Raton
+            Back to Villaggio of Boca Raton
           </a>
 
-          <div class="form-section">
-            <form id="property_manager_form" name="property_manager_form">
-              <div class="form-group">
-                <label for="form_name">
-                  Name
-                  <span class="required">*</span>
-                </label>
-                <input 
-                  type="text" 
-                  id="form_name" 
-                  name="form_name" 
-                  placeholder="Enter your full name" 
-                  required 
-                />
-              </div>
+          <div class="docs-section">
+            <h2 class="docs-section-title">Association Documents</h2>
+            
+            <div class="doc-item">
+              <div class="doc-name">Bylaws</div>
+              <a href="docs/Villaggio of Boca Raton By Laws.pdf" target="_blank" rel="noopener" class="download-btn" download>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+                DOWNLOAD FILE
+              </a>
+            </div>
 
-              <div class="form-group">
-                <label for="form_community">
-                  Community Name
-                  <span class="required">*</span>
-                </label>
-                <input 
-                  type="text" 
-                  id="form_community" 
-                  name="form_community" 
-                  value="Villagio of Boca Raton" 
-                  readonly 
-                  required 
-                  style="background-color: #f3f4f6;"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="form_address">
-                  Property Address
-                  <span class="required">*</span>
-                </label>
-                <input 
-                  type="text" 
-                  id="form_address" 
-                  name="form_address" 
-                  placeholder="Enter your property address" 
-                  required 
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="form_phone">
-                  Daytime Phone Number
-                  <span class="required">*</span>
-                </label>
-                <input 
-                  type="tel" 
-                  id="form_phone" 
-                  name="form_phone" 
-                  placeholder="Enter your daytime phone number" 
-                  required 
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="form_email">
-                  Email Address
-                  <span class="required">*</span>
-                </label>
-                <input 
-                  type="email" 
-                  id="form_email" 
-                  name="form_email" 
-                  placeholder="Enter your email address" 
-                  required 
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="form_description">
-                  Brief Description of Service Requested
-                  <span class="required">*</span>
-                </label>
-                <textarea 
-                  id="form_description" 
-                  name="form_description" 
-                  placeholder="Please describe the service you are requesting" 
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="submit-btn" id="submit_btn">
-                Submit Request
-              </button>
-            </form>
-          </div>
+            <div class="doc-item">
+              <div class="doc-name">2026 Budget</div>
+              <a href="docs/Villaggio - Final Budget 2026.pdf" target="_blank" rel="noopener" class="download-btn" download>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+                DOWNLOAD FILE
+              </a>
+            </div>
+            </div>
         </div>
       </section>
 
@@ -489,100 +418,6 @@
       <!--End Main Footer -->
 
       <script src="js/script.js" defer></script>
-      <script>
-        // ============================================
-        // EMAILJS CONFIGURATION
-        // ============================================
-        (function() {
-          emailjs.init("FK3hix37IyYy6GzT-"); // EmailJS Public Key
-        })();
-
-        // Wait for DOM to be fully loaded
-        document.addEventListener('DOMContentLoaded', function() {
-          const form = document.getElementById('property_manager_form');
-          if (!form) return;
-          
-          const submitButton = document.getElementById('submit_btn');
-          const originalButtonText = submitButton.textContent;
-          
-          // Handle form submission
-          form.addEventListener('submit', async function(event) {
-            event.preventDefault();
-            event.stopPropagation();
-            
-            // Get form values
-            const name = document.getElementById('form_name').value.trim();
-            const community = document.getElementById('form_community').value.trim();
-            const address = document.getElementById('form_address').value.trim();
-            const phone = document.getElementById('form_phone').value.trim();
-            const email = document.getElementById('form_email').value.trim();
-            const description = document.getElementById('form_description').value.trim();
-            
-            // Validate required fields
-            if (!name) {
-              alert('Please enter your name.');
-              return;
-            }
-            if (!community) {
-              alert('Please enter the community name.');
-              return;
-            }
-            if (!address) {
-              alert('Please enter your property address.');
-              return;
-            }
-            if (!phone) {
-              alert('Please enter your daytime phone number.');
-              return;
-            }
-            if (!email) {
-              alert('Please enter your email address.');
-              return;
-            }
-            if (!description) {
-              alert('Please enter a brief description of the service requested.');
-              return;
-            }
-            
-            // Disable submit button
-            submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-            
-            // Prepare email template parameters
-            const templateParams = {
-              to_email: 'officemanager@elitepropmgt.com',
-              from_name: name,
-              from_email: email,
-              phone: phone,
-              community: community,
-              property_address: address,
-              service_description: description,
-              reply_to: email,
-              subject: 'Property Manager Contact Request - Villagio of Boca Raton'
-            };
-            
-            try {
-              // Send email using EmailJS
-              // Note: You'll need to create a template in EmailJS dashboard and replace 'template_xxxxx' with your template ID
-              const response = await emailjs.send('service_l8z8huj', 'template_e8uo9xc', templateParams);
-              
-              // Success
-              alert('Thank you for contacting the property manager! We have received your request and will be in touch soon.');
-              form.reset();
-              // Reset community name to default value
-              document.getElementById('form_community').value = 'Villagio of Boca Raton';
-              submitButton.disabled = false;
-              submitButton.textContent = originalButtonText;
-            } catch (error) {
-              // Error
-              console.error('EmailJS Error:', error);
-              alert('Sorry, there was an error sending your message. Please try again or contact us directly at officemanager@elitepropmgt.com');
-              submitButton.disabled = false;
-              submitButton.textContent = originalButtonText;
-            }
-          });
-        });
-      </script>
     </body>
 </html>
 
