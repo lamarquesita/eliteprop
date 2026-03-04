@@ -294,7 +294,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Boca Linda North', url: 'boca-linda-north.html' },
     { name: 'Lakewood Oaks', url: 'lakewood-oaks.html' },
     { name: 'Applewood Village I', url: 'applewood-village-i.html' },
-    { name: 'Barwood Condominiums I', url: 'barwood-condominiums-i.html' },
     { name: 'Barwood Condominiums II', url: 'barwood-condominiums-ii.html' },
     { name: 'Barwood Condominiums IV', url: 'barwood-condominiums-iv.html' },
     { name: 'Lakeview Townhomes', url: 'lakeview-townhomes.html' },
