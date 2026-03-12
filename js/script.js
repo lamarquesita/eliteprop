@@ -299,6 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Lakeview Townhomes', url: 'lakeview-townhomes.html' },
     { name: 'Villaggio of Boca Raton', url: 'villaggio-of-boca-raton.html' },
     { name: 'Lake Windwood VIII', url: 'lake-windwood-viii.html' },
+    { name: 'Palm Royal Apartments', url: 'palm-royal-apartments.html' },
     { name: 'Ranchette Square Homeowners Assn Inc.', url: 'ranchette-square-homeowners-assn-inc.html' },
     { name: 'St. Tropez at Boca Golf POA', url: 'st-tropez-at-boca-golf-poa.html' }
   ];
